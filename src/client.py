@@ -182,3 +182,12 @@ class GenesysCloudClient:
             PureCloudPlatformClientV2.ArchitectApi: Architect API instance
         """
         return PureCloudPlatformClientV2.ArchitectApi(self.api_client)
+    
+    def get_users_api(self):
+        """
+        Get UsersApi instance for querying users.
+        
+        Returns:
+            PureCloudPlatformClientV2.UsersApi: Users API instance
+        """
+        return PureCloudPlatformClientV2.UsersApi(self.api_client)
