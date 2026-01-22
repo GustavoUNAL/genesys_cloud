@@ -2,7 +2,7 @@
 
 A professional Python library for interacting with the Genesys Cloud Platform API using OAuth2 Client Credentials authentication. This package provides a clean, well-documented interface for accessing Genesys Cloud resources including organizations, groups, divisions, reports, and more.
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Features](#features)
 - [Installation](#installation)
@@ -15,7 +15,7 @@ A professional Python library for interacting with the Genesys Cloud Platform AP
 - [Documentation](#documentation)
 - [Contributing](#contributing)
 
-## ✨ Features
+##  Features
 
 - **OAuth2 Client Credentials Authentication**: Secure server-to-server authentication
 - **Automatic Region Detection**: Automatically finds the correct Genesys Cloud region
@@ -43,7 +43,7 @@ Required packages:
 - `PureCloudPlatformClientV2>=240.0.0` - Official Genesys Cloud Python SDK
 - `requests>=2.31.0` - HTTP library
 
-## ⚙️ Configuration
+##  Configuration
 
 ### 1. Configure Credentials
 
@@ -214,7 +214,7 @@ python scripts/list_resources.py
 
 Output is saved to: `../output/genesys_resources_YYYYMMDD_HHMMSS.json`
 
-## ⚠️ Error Handling
+##  Error Handling
 
 ### Error 403 Forbidden
 
@@ -238,7 +238,7 @@ If you receive a 400 "invalid_client" error:
 - Verify the region is correct
 - Run `python scripts/test_regions.py` to find the correct region
 
-## 📚 Documentation
+##  Documentation
 
 ### API Reference
 
@@ -255,7 +255,7 @@ All code is documented with:
 - Type hints where applicable
 - Usage examples
 
-## 🔒 Security Notes
+##  Security Notes
 
 - **Never commit `src/config.py`** with real credentials to the repository
 - Use `config.example.py` as a template
@@ -263,7 +263,7 @@ All code is documented with:
 - Store credentials securely in your environment
 - Rotate credentials regularly
 
-## 🤝 Contributing
+##  Contributing
 
 When contributing to this project:
 
@@ -273,13 +273,13 @@ When contributing to this project:
 4. Update this README if adding new features
 5. Test your changes before committing
 
-## 📝 Important Notes
+##  Important Notes
 
 - **Client Credentials**: This authentication type has no user context, so some user-specific APIs (like `GET /v2/users/me`) won't work
 - **Permissions**: The client has a role with restrictions. If you need access to new functionalities, request the corresponding permissions
 - **Region**: Make sure the region is correctly configured for your organization
 
-## 📞 Support
+##  Support
 
 For issues or questions:
 1. Check the error messages - they often contain helpful suggestions
@@ -287,7 +287,7 @@ For issues or questions:
 3. Contact your Genesys Cloud administrator for permission issues
 4. Check the logs for detailed error information
 
-## 📄 License
+##  License
 
 This project is for internal use. All rights reserved.
 
@@ -295,5 +295,5 @@ This project is for internal use. All rights reserved.
 
 **Version**: 1.0.0  
 **Last Updated**: 2026-01-21  
-**Maintainer**: Development Team
+**Maintainer**: Gustavo Arteaga
 # genesys_cloud
